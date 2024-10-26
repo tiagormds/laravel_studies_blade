@@ -1,11 +1,15 @@
 @extends('layout.main_layout')
-@section('page_title', 'Home Page')
 @section('content')
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col card p-5 bg-secondary text-center">
-                Lorem ipsum dolor sit amet consectetur elit. Tempore, quo.
-            </div>
-        </div>
-    </div>
+    <h3>Este texto faz parte da view</h3>
+
+
+    {{-- redenrizar o component --}}
+    <x-my-component message="Mensagem passada para dentro do componente" />
+
+    {{-- redenrizar component que existe dentro de subpasta --}}
+    <x-admin.admin-card :name="$myName" teste="Olá mundo!" />
+
+    <h3>Este texto faz parte da view</h3>
+
+    <p>{{ $myName }}</span></p>
 @endsection
