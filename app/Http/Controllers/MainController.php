@@ -17,13 +17,19 @@ class MainController extends Controller
             ],
             'Mario' => [
                 'Português',
-                'Espanhol'
             ],
             'Carolina' => [
                 'Português',
                 'Inglês',
                 'FrancÊs'
             ],
+            'João' => [
+                'Português',
+                'Inglês',
+                'FrancÊs',
+                'Japonês'
+            ],
+
         ];
 
         return view('home', compact('libguasPessoa'));
