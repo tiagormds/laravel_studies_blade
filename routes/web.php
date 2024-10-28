@@ -7,4 +7,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/home', [MainController::class, 'showPage'])->name('showPage');
+Route::view('/home', 'home');
+Route::view('/about', 'about');
+Route::view('/contact', 'contact');
